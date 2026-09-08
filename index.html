@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To do app</title>
+  <link rel="stylesheet" href="index.css">
+
+
+  <script src="index.js" defer></script>
+</head>
+
+
+<body>
+  <header>
+    <h3>To do</h3>
+  </header>
+
+
+  <main>
+    <h1>Mine opgaver</h1>
+    <p id="klokken"></p>
+
+    <input type="text" class="task_text" placeholder="Tilføj en opgave" />
+    <li class="task">
+
+      <label for="dato">
+        Vælg dato
+      </label>
+      <input type="date" id="choosedate">
+      <input type="checkbox" id="weather">
+      <label for="outdoor">
+        Er dette en udendørs aktivitet?
+      </label>
+
+      <button class="create_task" title="Tilføj task">✓</button>
+    </li>
+
+    <h4 class="opgaver">Opgaver</h4>
+    <div class="title">
+      <p></p>
+      <p class="opgave">Opgave</p>
+      <p class="taskdate">Dato</p>
+      <p class="weatherfortoday">Vejeret</p>
+      <p></p>
+    </div>
+
+    <ul class="tasks"></ul>
+
+
+    <h5 class="fuldforttask">Fuldførte opgaver</h5>
+
+    <li class="fuldfort"></li>
+
+  </main>
+</body>
+
+
+</html>

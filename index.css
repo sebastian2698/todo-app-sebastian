@@ -1,0 +1,159 @@
+:root {
+  --color-Head: #2564cf;
+  --color-H3: #e1dfdd;
+  --color-body: #f0f0f0;
+  --color-button: #f8f8f8;
+  --color-deletebutton: #800f1e;
+}
+h1 {
+  padding: 5px;
+  text-align: center;
+}
+header {
+  background-color: var(--color-Head);
+  padding: 10px;
+}
+header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--color-H3);
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: Arial, sans-serif;
+}
+#klokken {
+  text-align: center;
+  font-size: 10px;
+}
+
+.create_task {
+  margin-left: auto;
+  background-color: var(--color-Head);
+  color: var(--color-button);
+
+  border-radius: 50%;
+  border: 1px solid var(--color-Head);
+  font-size: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.title,
+.tasks li {
+  border: 1px outset black;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 5px 5px;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  box-sizing: border-box;
+  list-style: none;
+}
+.tasks {
+  padding: 10px;
+}
+.weatherresult {
+  text-align: center;
+}
+
+.title p {
+  margin: 0;
+  text-align: center;
+}
+.task_text {
+  border: 1px inset black;
+  padding: 1rem;
+  margin: 1rem auto 0;
+  width: 1400px;
+  display: block;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.fuldfort {
+  padding: 10px;
+  margin: 0 auto;
+  width: 1200px;
+  box-sizing: border-box;
+  list-style: none;
+}
+.fuldfort li {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  border: 1px outset black;
+  border-radius: 5px 5px;
+
+  background-color: rgba(217, 221, 220, 0.5);
+  padding: 10px;
+}
+.fuldfort li p {
+  margin: 0;
+  text-align: center;
+  color: rgba(153, 157, 160);
+  text-decoration: line-through;
+}
+.fuldfort li .regrettask {
+  justify-self: center;
+}
+.task {
+  border: 1px outset black;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 5px 5px;
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.fuldforttask {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.opgaver {
+  padding: 2px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.deletetask {
+  background-color: var(--color-deletebutton);
+  color: var(--color-button);
+  border-radius: 50%;
+  border: 1px solid var(--color-deletebutton);
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.regrettask {
+  margin-left: auto;
+  background-color: var(--color-Head);
+  color: var(--color-button);
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 1px solid var(--color-Head);
+  cursor: pointer;
+}
+
+.tasks li p {
+  margin: 0;
+  text-align: center;
+}
+
+.tasks li input[type="checkbox"] {
+  justify-self: center;
+}
