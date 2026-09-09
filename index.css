@@ -28,7 +28,9 @@ body {
   text-align: center;
   font-size: 10px;
 }
-
+img {
+  width: 10%;
+}
 .create_task {
   margin-left: auto;
   background-color: var(--color-Head);
@@ -60,6 +62,8 @@ body {
 }
 .weatherresult {
   text-align: center;
+  padding-bottom: 7px;
+  padding-left: 10px;
 }
 
 .title p {
