@@ -105,7 +105,7 @@ function prepareObjects(jsonData, task) {
   // Vejeret gemmes til opgaven som API hører til
   task.weather = weatherText;
 
-  task.weatherImage = wwCodes[weathercode];
+  task.weatherpng = wwCodes[weathercode];
   // renderList gør at funktionen kører igen, hvergang data opdateres
   renderList();
 }
@@ -121,11 +121,7 @@ function renderList() {
     if (task.taskDone) {
       li.innerHTML = `
       <p>${task.taskTxt}</p> <p>${task.taskDate}</p> <p>${(task.outdoor && task.weather) || `<span class="weatherresult">Ikke udendørs</span>`}</p>
-
-
-
-
-      <button class="regrettask" title="Fortryd handling">✓</button>
+<button class="regrettask" title="Fortryd handling">✓</button>
     `;
 
       const regrettask = li.querySelector(".regrettask");
@@ -151,7 +147,7 @@ function renderList() {
  ${
    task.outdoor
      ? `<span class="weatherresult">${task.weather || "Henter vejr..."}
- ${task.weatherImage ? `<img src="png/${task.weatherImage}" alt"${task.weather}">` : ""}
+ ${task.weatherpng ? `<img src="png/${task.weatherpng}" alt"${task.weather}">` : ""}
  </span>`
      : `<span class="weatherresult">Ikke udendørs</span>`
  }
